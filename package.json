@@ -1,0 +1,15 @@
+{
+  "name": "appexp",
+  "version": "1.0.0",
+  "description": "The nodejs app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dejan Zarkovic",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.0.2",
+    "express": "^4.17.1"
+  }
+}
