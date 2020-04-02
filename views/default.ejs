@@ -1,15 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
-</head>
-<body>
+<%- include('partials/header'); %>
+<h1><%= title %> </h1><h3>A localna varijabla je <%= pagetitle %></h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatum iste ducimus autem alias placeat sed quibusdam deleniti atque. Incidunt, ducimus quasi! Saepe quaerat ducimus libero accusamus, ratione ullam dolorum.</p>
+<%= //console.log(typeof(users)); %>
+<% if (typeof(users) == 'object') { %>
+    <%# function1(users) %>
+    <script>
+       
+        //var a = typeof(users);
+        function function1(users) {
+            var a = users;
+            alert(a);
+             console.log(a);
+        };
+    </script>
     <ul>
         <% for(var i = 0; i < users.length; i++){ %>
         <li><%= users[i] %></li>
         <% } %>
     </ul>
-</body>
-</html>
+<% } %>
+
+<%- include ('partials/footer'); %>
